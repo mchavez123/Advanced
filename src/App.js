@@ -6,6 +6,7 @@ import MainHeader from "./components/MainHeader/MainHeader";
 import AuthContext from "./store/auth-context";
 import Counter from "./components/Counter/Counter";
 import PostsUsersComments from "./components/PostsUsersComments/PostsUsersComments";
+import Todo from './components/Todo/Todo';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         {isLoggedIn && <Home onLogout={logoutHandler} />}
       </main>
       <Counter />
+      <Todo />
       <PostsUsersComments />
   
     </AuthContext.Provider>
